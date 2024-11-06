@@ -34,11 +34,11 @@ void Lexer(FILE *file){
         }
         else if (current=='(')
         {
-            printf("OPEN VENDOR\n");
+            printf("OPEN PAREN\n");
         }
         else if (current==')')
         {
-            printf("CLOSE PARE\n");
+            printf("CLOSE PAREN\n");
         }
         
         else if (isdigit(current))

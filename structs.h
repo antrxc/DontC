@@ -3,6 +3,7 @@
 
 #include "enums.h"
 
+
 //Token Structs 
 typedef struct 
 {
