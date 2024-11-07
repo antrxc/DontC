@@ -1,4 +1,4 @@
-#Data Types and Keywords
+# Data Types and Keywords
     int → whole
     float → maybe
     double → surely
@@ -15,7 +15,7 @@
     static → steady
     extern → outlink
     volatile → unstable
-Control Flow
+# Control Flow
     if → chk
     else → other
     else if → or_chk
@@ -28,47 +28,47 @@ Control Flow
     continue → skip
     goto → jump
     return → sendback
-Access Modifiers
+# Access Modifiers
     public → open
     private → secret
     protected → guarded
-Memory Management
+# Memory Management
     malloc → getspace
     calloc → getzerospace
     free → clearspace
     sizeof → howbig
-Functions and Macros
+# Functions and Macros
     #include → #grab
     #define → #make
     #ifdef → #chkif
     #ifndef → #chknotif
     #endif → #done
     #pragma → #warn
-Logical Operators
+# Logical Operators
     && → andalso
     || → orels
     ! → not
     == → sameas
     != → notlike
-Arithmetic Operators
+# Arithmetic Operators
     + → add
     - → sub
     * → times
     / → divide
     % → modulus
-Bitwise Operators
+# Bitwise Operators
     & → bitand
     | → bitor
     ^ → bitxor
     ~ → bitnot
     << → shiftleft
     >> → shiftright
-Pointers
+# Pointers
     * (dereference) → pointto
     & (address) → locationof
     -> → goto (for pointer struct access)
     . → dot (for direct struct access)
-Miscellaneous
+# Miscellaneous
     main → start
     NULL → none
     true → yes
