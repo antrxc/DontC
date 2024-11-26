@@ -1,1 +1,58 @@
-exit(12);
+#grab <stdio.h>
+#grab <stdlib.h>
+
+fixed whole TOP = 10;
+
+open steady whole start() {
+    letter name[50];
+    yesno isAdult = no;
+
+    Show("Enter your name: ");
+    Fetch("%s", locationof name);
+
+    chk (sameas name[0], '\0') {
+        Show("Invalid name!\\n");
+        sendback;
+    }
+
+    Show("Hello, ");
+    Show(name);
+    Show("!\\n");
+
+    whole age;
+    Show("Enter your age: ");
+    Fetch("%d", locationof age);
+
+    chk (age < 18) {
+        isAdult = no;
+    } or_chk (age >= 18 andalso age <= 100) {
+        isAdult = yes;
+    } other {
+        Show("Invalid age entered!\\n");
+        sendback;
+    }
+
+    chk (isAdult == yes) {
+        Show("You are an adult.\\n");
+    } other {
+        Show("You are not an adult.\\n");
+    }
+
+    bundle point {
+        whole x;
+        whole y;
+    };
+
+    bundle point p1 = {add 5, times 2};
+    Show("Point: (");
+    Show("%d, %d)\\n", p1.x, p1.y);
+
+    chance seed = time(none);
+    steady whole randNum = Chance() % TOP;
+
+    Show("Random number (0-9): ");
+    Show("%d\\n", randNum);
+
+    sendback 0;
+}
+
