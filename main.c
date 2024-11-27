@@ -57,6 +57,6 @@ void Lexer(FILE *file){
 }
 int main(){
     FILE *file;
-    file = fopen("test.dc", "r");
+    file = fopen("file.dc", "r");
     Lexer(file);
 }
